@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(192,125,83);
+}
+.hari{
+    height: 100px;
+    width: 100%;
+    background-color: grey;
+    border-bottom: 2px solid black;
+}
+li{
+    display: flex;
+    justify-content:space-between;
+    padding:50px;
+    margin-right: 20px;
+}
+#tag{
+    text-decoration: none;
+    user-select: none;
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+#tag:hover{
+    color:rgb(0, 255, 255);
+}
+.image{
+    position: relative;
+    bottom:50px;
+    right: 10px;
+    height: 100px;
+    width: 200px;
+    user-select: none;
+}
+img{
+    height: 500px;
+    width: 50%;
+    border-radius: 20px;
+    user-select: none;
+}
+.robert{
+    position:absolute;
+    bottom:479px;
+    left:50%;
+    font-family:'Linux Libertine','Georgia','Times',serif;
+    color:rgb(23,57,54);
+}
+.summary{
+    position:absolute;
+    top: 30%;
+    left: 51%;
+
+}
+video{
+    width:60%;
+    height: 500px;
+    position:relative;
+    top:40px;
+    left:20%;
+}
+.sk{
+position:relative;
+    top:10px;
+}
+.ironman{
+    color:rgb(23,57,54);
+    position: relative;
+    top:30px;
+    user-select:none;
+}
+.heading{
+    padding: 40px;
+    text-align: center;
+}
