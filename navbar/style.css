@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@200&family=Montserrat:wght@300&display=swap');
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Montserrat';
+}
+body{
+    height: 100vh;
+    width:100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,91,130,1) 0%, rgba(0,212,255,1) 100%);
+}
+.header{
+    height:100px;
+    width:100%;
+    background-color: #555555ab;
+    border-bottom:1.5px solid black
+}
+nav span{
+    font-size: 2em;
+    padding-left:20px;
+    line-height: 100px;
+    color:white;
+}
+nav ul{
+    float: right;
+    display: flex;
+    line-height: 100px;
+}
+nav ul li{
+    padding-left:40px;
+    margin-right:40px;
+}
+nav ul li a{
+    color:black;
+    padding:10px;
+}
+nav ul li:hover a{
+    color:beige;
+    border-bottom:2px solid black;
+    box-shadow: 1.5px 1.5px 5px black;
+}
+
+
+@media(max-width:861px){
+    nav ul{
+        position:fixed;
+        flex-direction: column;
+        left:0px;
+        width:100%;
+        height:100vh;
+        left:-100%;
+        transition:2s;
+        border-radius:20px;
+        box-shadow: 0 20px 30px black;
+    }
+    nav ul.slide{
+        left:0px;
+        transition:2s;
+    }
+    nav ul li{
+        font-size:20px;
+        text-align:center;
+    }
+    .hamburs{
+        float:right;
+        padding-right:20px;
+        padding-top:45px;
+    }
+    .hamburs .line{
+        width:20px;
+        height:2px;
+        background-color:black;
+        margin-bottom:5px;
+        display:block;
+        
+    }
+}
