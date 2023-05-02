@@ -81,7 +81,7 @@ width:300px;
 height:450px;
 background-color:#F0FFFF;
 margin-left:20%;
-margin-top:10%;
+margin-top:7%;
 padding:20px;
 border-radius:5px;
 color:red;
@@ -117,7 +117,7 @@ background-color:rgb(9, 123, 168);
 text-decoration: none;
 font-size: smaller;
 position:absolute;
-bottom:2%;
+bottom:7.5%;
 left:22%;
 }
 .loginlink:hover{
@@ -127,4 +127,23 @@ color:red;
 position:relative;
 top:30px;
 left:20px;
+}
+.home{
+    position:relative;
+    top:95px;
+    font-size:15px;
+    text-decoration: none;
+}
+.home:hover{
+    color:red;
+
+}
+.home1{
+     position:relative;
+     top:78px;
+     font-size: 15px;
+     text-decoration:none;
+}
+.home1:hover{
+    color:red;
 }
