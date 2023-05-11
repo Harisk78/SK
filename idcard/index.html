@@ -10,14 +10,21 @@
 </head>
 <body>
     <div class="container" name="card">
-        <h3>Harisk</h3>
+        <br>
+       <center> <h1>Harisk</h1></center>
         <div class="circle"></div>
-        <div id="name"class="name"></div>
-        <h5>Web Designer</h5>
-        <label>ID no:</label><div id="id"></div><br><br>
-        <label>E-mail:</label><div id="mail"></div><br><br>
-        <label>Phone No:</label><div id="phone"></div>
+        <div class="data">
+        <h3>Name :  <span id="name">Hari</span></h3><br>
+        <h3>RegNo :  <span id="reg">7115BCSD26</span></h3><br>
+        <h3>Dept :  <span id="dept">CSD</span></h3><br>
+        <h3>Phone :  <span id="phn">9763538262</span></h3><br>
+        </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("name").innerHTML=localStorage.getItem("n");
+        document.getElementById("reg").innerHTML=localStorage.getItem("reg");
+        document.getElementById("dept").innerHTML=localStorage.getItem("dept");
+        document.getElementById("phn").innerHTML=localStorage.getItem("num");
+    </script>
 </body>
 </html>

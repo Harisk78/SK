@@ -7,19 +7,33 @@
     <title>Harsik</title>
     <link rel="stylesheet" href="style1.css">
     <link rel="icon" href="sk logo.png">
+    <script>
+function vfun(){
+let idname=document.getElementById('name').value;
+let idnum=document.getElementById('reg').value;
+let iddept=document.getElementById('dept').value;
+let pnum=document.getElementById('number').value;
+localStorage.setItem("n",idname);
+localStorage.setItem("reg",idnum);
+localStorage.setItem("dept",iddept);
+localStorage.setItem("num",pnum);
+}
+
+    </script>
 </head>
 <body>
+    <form action="index.html">
     <div class="container">
         <label>Name</label><br>
         <input type="text" id="name" placeholder="Name"><br>
         <label>ID No</label><br>
-        <input type="text" id="idnum" placeholder="Id Num"><br>
-        <label>Email</label><br>
-        <input type="email" id="email" placeholder="E-mail"><br>
+        <input type="text" id="reg" placeholder="RegNo"><br>
+        <label>Department</label><br>
+        <input type="text" id="dept" placeholder="Department"><br>
         <label>Phone Num</label><br>
-        <input type="number" id="number" placeholder="Phone Number"><br>
-        <button onclick="vfun()"class="summit"><a href="index.html">Submit</a></button>
+        <input type="tel" id="number" placeholder="Phone Number"><br>
+       <input onclick="vfun();" class="summit" type="submit" value="submit">
     </div>
-    <script src="script.js"></script>
+    </form>
 </body>
 </html>
