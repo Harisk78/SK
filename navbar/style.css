@@ -17,18 +17,27 @@ body{
     height:100px;
     width:100%;
     background-color: #555555ab;
-    border-bottom:1.5px solid black
+    border-bottom:1.5px solid black;
 }
+
 nav span{
-    font-size: 2em;
-    padding-left:20px;
+    font-size: 3em;
+    font-weight: 400;
+    padding-left:50px;
     line-height: 100px;
     color:white;
+    letter-spacing: 5px;
 }
 nav ul{
     float: right;
     display: flex;
     line-height: 100px;
+    animation:ul 2s ease-in-out;
+}
+@keyframes ul{
+    0%{
+        transform: translateY(-100%);
+    }
 }
 nav ul li{
     padding-left:40px;
@@ -43,8 +52,6 @@ nav ul li:hover a{
     border-bottom:2px solid black;
     box-shadow: 1.5px 1.5px 5px black;
 }
-
-
 @media(max-width:861px){
     nav ul{
         position:fixed;
@@ -71,7 +78,7 @@ nav ul li:hover a{
         padding-top:45px;
     }
     .hamburs .line{
-        width:20px;
+        width:10px;
         height:2px;
         background-color:black;
         margin-bottom:5px;
