@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+.container{
+    height: 100%;
+    width:100vw;
+    position: absolute;
+}
+.container.active{
+    height: 100%;
+    background-color: rgb(58, 58, 58);
+}
+.header{
+    height:80px;
+    width:100%;
+    background-color: rgb(58, 58, 58);
+}
+.header.active{
+    background-color: rgb(0, 0, 0);
+    
+}
+ul{
+    display:flex;
+    float:right;
+}
+ul li{
+    padding-right:40px;
+    line-height: 80px;
+    list-style-type: none;
+
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+    padding-bottom:15px;
+}
+ul li a .active{
+    color:white;
+}
+ul li:hover a{
+    color:blue;
+    border-bottom: 1px solid blue;
+}
+.but{
+    height:40px;
+    width:50px;
+    border-radius:20%;
+    border:none;
+    background-color: aqua;
+    cursor: pointer;
+    position: relative;
+    left:35%;
+    top:30%;
+}
+.but:hover{
+    border:1px solid black;
+    box-shadow: 2px 2px 3px black;
+}
+span{
+    color:white;
+    font-family: sans-serif;
+    position:relative;
+    top:30%;
+    left:7%;
+    letter-spacing: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.content .c1{
+    height:520px;
+    width:500px;
+    position:relative;
+    top:10px;
+    left:30%;
+    border-radius:10px;
+    box-shadow: 10px 10px 30px black;
+}
+.content .c1 img{
+    height:350px;
+    width:350px;
+    margin-left:70px;
+    margin-top:10px;
+    border-radius:10px;
+    scale:0.95;
+    transition: scale 0.2s ease;
+}
+.content .c1 img:hover{
+    scale:1;
+    cursor: pointer;
+}
+.content .c1 h5{
+    margin-left:80px;
+    margin-top:10px;
+    cursor:pointer;
+}
+.buynow{
+    position:relative;
+    top:40px;
+    left:20%;
+    height:50px;
+    width: 120px;
+    border-radius:10px;
+    cursor:pointer;
+    background-color:rgb(39, 39, 148);
+    color:white;
+    border:none;
+    box-shadow: 5px 5px 10px black;
+}
+.buynow:hover,.cart:hover{
+    border:1px solid black;
+}
+.buynow:active,.cart:active{
+    scale:0.98;
+}
+.cart{
+    position:relative;
+    top:-10px;
+    left:50%;
+    height:50px;
+    width: 120px;
+    border-radius:10px;
+    cursor:pointer;
+    background-color:rgb(39, 39, 148);
+    color:white;
+    border:none;
+    box-shadow: 5px 5px 10px black;
+}
+.content .c1 h4{
+    position:relative;
+    left:20%;
+    top:20px;
+}
+.content .c1 .off{
+    position: relative;
+    top:3px;
+    left:40%;
+}
