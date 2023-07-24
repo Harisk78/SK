@@ -1,0 +1,358 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home{
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    height:-10px;
+    width:100%;
+    /* background-color: rgba(48, 47, 47, 0.342); */
+    z-index: 1;
+
+}
+.homeimg{
+    position:absolute;
+    top:0px;
+}
+.nav .icon{
+    height:5px;
+    width:50px;
+    background-color:rgb(19, 19, 19);
+    padding:5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin:15px 50px;
+    animation:title 0.5s linear;
+    color:rgb(211, 211, 211);
+}
+.nav h1{
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+    left:150px;
+    top:-90px;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    height: -10px;
+    width:100px;
+    animation:title 0.5s linear;
+    color:rgb(22, 22, 22);
+}
+@keyframes title {
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.nav ul{
+    float:right;
+    position: relative;
+    top:-160px;
+    right: 30px;
+    height:auto;
+    border-radius:10px;
+    /* box-shadow: inset 5px 5px 10px black,
+                      2px 2px 10px white; */
+    display:flex;
+    animation: list 0.5s linear;
+    padding-left: 0%;
+}
+@keyframes list {
+    0%{
+        transform: translateY(-200%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+.nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font: size 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 10px;
+    height:40px;
+    width:100px;
+    padding:20px;
+    border-radius: 10px;
+    transition: 0.5s;
+    
+}
+.nav ul li:hover{
+    background-color: rgba(53, 53, 53, 0.527);
+    transition: 0.5s;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.nav ul li:active{
+    scale:0.98;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:#000;
+    font-weight:600;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 10px rgb(37, 37, 37);
+}
+.nav ul li:hover a{
+    color:rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.content{
+    border-radius:3px;
+    position:absolute;
+    top:35%;
+    left:10%;
+    background-color: #00000088;
+    color:rgba(255, 255, 255, 0.801);
+    box-shadow: 2px 2px 5px black;
+}
+.content .contenthead{
+    padding:50px 30px;
+}
+.content .content-slogan{
+    padding:50px 20px;
+}
+/*LOGIN*/
+#login{
+    height:100vh;
+    width:100%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    overflow: hidden;
+}
+.log{
+    position: absolute;
+    top:70px;
+    height:450px;
+    width:300px;
+    background-color:rgb(240, 229, 70);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin-left:60%;
+    border-top-right-radius:50px;
+    box-shadow:5px 5px 10px black;
+    animation:log 0.5s linear;
+}
+.logimg{
+    opacity:0.80;
+}
+@keyframes log {
+    0%{
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+.log input{
+    margin:10% 0;
+    height:30px;
+    width:230px;  
+    border-radius: 20px;
+    border:none;
+    outline:none;
+    padding-left:20px;
+    font-size: 15px;
+}
+.log input::placeholder{
+    letter-spacing: 2px;
+}
+.log input:hover{
+    background-color: rgb(134, 250, 173);
+}
+.log input:focus{
+    border:1px solid black;
+}
+.log h1{
+    position: relative;
+    top:-7px;
+    /* text-shadow: 2px 2px 5px white; */
+    color:rgb(4, 87, 4);
+    font-weight: 600;
+}
+.log button{
+    height: 40px;
+    width:150px;
+    border-radius: 50px;
+    background-color: rgb(32, 36, 25);
+    border:none;
+    outline:none;
+    cursor:pointer;
+    color:white;
+    font-size:20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.log button:hover{
+    border: 1px solid black;
+    background-color: rgb(19, 26, 7) ;
+    /* transition: 0.5s; */
+}
+.log button:active{
+    scale: 0.98;
+    color:black;
+}
+.log .login{
+    color:black;
+    position: relative;
+    left:-80px;
+    top:20px;
+}
+.log .home{
+    color:black;
+    position: relative;
+    right:-80px;
+}
+.log .frt{
+    position:relative;
+    left:70px;
+    padding-bottom:20px;
+    font-size:15px;
+    color:black;
+}
+.log a:hover{
+    color:blue;
+}
+/*Register*/
+#register{
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    overflow: hidden;
+}
+.regimg{
+    opacity: 0.78;
+}
+.reg{
+    position: absolute;
+    top: 130px;
+    height:450px;
+    width:300px;
+    background-color: rgba(255, 0, 0, 0.521);
+    /* background: transparent; */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin-right:35%;
+    border-top-right-radius:50px;
+    box-shadow: 10px 10px 15px black;
+    animation: reg 0.5s linear;
+}
+@keyframes reg {
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+.reg input{
+    margin:10px 0;
+    height:30px;
+    width:230px;  
+    border-radius: 20px;
+    border:none;
+    outline:none;
+    padding-left:20px;
+    font-size: 15px;
+}
+.reg input::placeholder{
+    letter-spacing: 2px;
+}
+.reg input:hover{
+    background-color: rgb(134, 250, 173);
+}
+.reg input:focus{
+    border:1px solid black;
+}
+.reg h1{
+    position: relative;
+    top:-7px;
+    /* text-shadow: 2px 2px 5px white; */
+    color:rgb(4, 87, 4);
+    font-weight: 600;
+}
+.reg button{
+    height: 40px;
+    width:150px;
+    border-radius: 50px;
+    background-color: rgb(80, 95, 54);
+    border:none;
+    outline:none;
+    cursor:pointer;
+    color:white;
+    font-size:20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.reg button:hover{
+    border: 1px solid black;
+    background-color: rgb(53, 66, 31) ;
+    /* transition: 0.5s; */
+}
+.reg button:active{
+    scale: 0.98;
+    color:black;
+}
+.reg .register{
+    color:black;
+    position: relative;
+    left:-70px;
+    top:0px;
+}
+.reg .home{
+    color:black;
+    position: relative;
+    right:-80px;
+}
+.reg a:hover{
+    color:blue;
+}
+@media (max-width:868px) {
+    .nav{
+        height:200px;
+    }
+    .nav ul{
+        margin-top:10%;
+    }
+}
+@media (max-width:1440px) {
+    .nav{
+        height:100px;
+    }
+    .nav .icon{
+        height:60px;
+
+    }
+    #login .log{
+        margin-top: 60px;
+    }
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDA-List-Harisk</title>
+    <link rel="stylesheet" href="list.css">
+    <link rel="icon" href="sk logo.png">
+</head>
+<body>
+    <div id="list">
+        <div class="nav">
+            <div class="icon-list">
+                <ion-icon class="icon" name="bag-handle-outline"></ion-icon>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#meat">Grocery</a></li>
+                    <li><a href="mailto:harisksk78@gmail.com">contact</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" class="search-input" placeholder="Search for products">
+                <ion-icon class="search-icon" name="search-outline"></ion-icon>
+            </div>  
+            <div class="left-icons">
+                <ion-icon class="icon cart" name="cart-outline"></ion-icon>
+                <ion-icon class="icon per" name="person" id="person"></ion-icon>
+            </div>
+        </div>
+        <div class="profile active" id="pro">
+            <img src="profile.png" alt="img" class="proimg" height="100px" width="100px">
+            <h2><ion-icon class="pro-icon" name="person-circle-outline"></ion-icon>Mr.RDJ</h2>
+            <a href="mailto:harisksk78@gmail.com"><ion-icon class="pro-icon" name="mail-outline"></ion-icon>Email Address</a>
+            <span class="settings"> <ion-icon class="pro-icon" name="settings-outline"></ion-icon>Settings</span>
+            <span class="ana"><ion-icon class="pro-icon" name="analytics-outline"></ion-icon>Analysis</span>
+        </div>
+        <div class="off-imagegrid">
+            <div class="img img1 active" style="background-image:url('off1.jpg') ;"></div>
+            <div class="img img2"  style="background-image:url('off2.jpg') ;"></div>
+            <div class="img img3"  style="background-image:url('off3.jpg') ;"></div>
+        </div>
+        <div id="product-btns" class="product-list"> 
+            <ul>
+                <li><a href="#offers-list">Best Offers</a></li>
+                <li><a href="#meat">Meat,Eggs and Fish</a></li>
+                <li><a href="#vegetables">Fruits And Vegetables</a></li>
+                <li><a href="#daily-stps">Your Daily Staples</a></li>
+                <li><a href="#snack">Snacks</a></li>
+            </ul>
+        </div>
+        <div id="offers-list">
+            <h4>OFFERS</h4>
+            <div class="off offer1">
+                <h3>BEST DEALS OF THE WEEK</h3>
+                <a href="#">View Details ></a>
+            </div>
+            <div class="off offer2">
+                <h3>BEST SEASON OFFERS</h3>
+                <a href="#">View Details ></a>
+            </div>
+            <div class="off offer3">
+                <h3>COMBO YOU CAN'T MISS IT</h3>
+                <a href="#">View Details ></a>
+            </div>
+        </div>
+        <div id="meat">
+            <h4>Meat,Eggs and Fish</h4>
+            <div class="image">
+                <img src="meats.jpg" alt="meat">
+                <h1>Let's Crack Your Meat Cravings</h1>
+                <h2>UPTO<br>30%<br>OFF</h2>
+            </div>
+            <div class="meat-content-list">
+                <div class="meat-list1">
+                    <div class="off"><span>Get 25% off</span></div>
+                    <div class="img" style="background-image: url(eggimg.jpg);"></div>
+                    <span class="name">Farm Eggs - Regular, Medium, Antibiotic Residue-Free</span>
+                    <select>price <option value="6pcs-49.00">6pcs-49.00</option><option value="+3pcs-5%off">+3pcs-5%off</option></select>
+                    <span class="price">MRP <del>Rs-65.00</del> Rs-49.00</span>
+                    <div class="input"><label>Qty</label><input type="number" value="1"></div>
+                    <button><ion-icon name="cart-outline"></ion-icon>Add</button>
+                </div>
+                <div class="meat-list2">
+                    <div class="off"><span>Get 25% off</span></div>
+                    <div class="img" style="background-image: url(meatimg.jpg);"></div>
+                    <span class="name">Chicken - Curry Cut Without Skin, Antibiotic Residue-Free, 6 To 9 Pcs</span>
+                    <select>price <option value="1 kg - Rs 299.00">1 kg - Rs 299.00</option><option value="500g - Rs 159.00">500g - Rs 159.00</option><option value="250g - Rs 109.00">250g - Rs 109.00</option></select>
+                    <span class="price">MRP <del>Rs-65.00</del> Rs-49.00</span>
+                    <div class="input"><label>Qty</label><input type="number" value="1"></div>
+                    <button><ion-icon name="cart-outline"></ion-icon>Add</button>
+                </div>
+                <div class="meat-list3">
+                    <div class="off"><span>Get 25% off</span></div>
+                    <div class="img" style="background-image: url(fish.jpg);"></div>
+                    <span class="name">Fish Large Curry Cut 500 g +  Basa Fish Fillet 500 g</span>
+                    <select>price <option value="1 kg - Rs 399.00">1 kg - Rs 399.00</option><option value="500g - Rs 249.00">500g - Rs 249.00</option><option value="250g - Rs 199.00">250g - Rs 199.00</option></select>
+                    <span class="price">MRP <del>Rs-65.00</del> Rs-49.00</span>
+                    <div class="input"><label>Qty</label><input type="number" value="1"></div>
+                    <button><ion-icon name="cart-outline"></ion-icon>Add</button>
+                </div>
+            </div>
+        </div>
+        <div id="vegetables">
+            <h4>Vegetables</h4>
+            <div class="vege-list">
+                <div class="vege1">
+                    <div class="off"><span>Get 25% off</span></div>
+                    <div class="img" style="background-image: url(onionimg.jpg);"></div>
+                    <span class="name">Onion (Loose)</span>
+                    <select>price <option value="1 kg - Rs 35.00">1 kg - Rs 35.00</option><option value="2kg - Rs 69.00">2kg - Rs 69.00</option><option value="5kg - Rs 166.00">5kg - Rs 166.00</option></select>
+                    <span class="price">MRP <del>Rs-65.00</del> Rs-49.00</span>
+                    <div class="input"><label>Qty</label><input type="number" value="1"></div>
+                    <button><ion-icon name="cart-outline"></ion-icon>Add</button>
+                </div>
+                <div class="vege2">
+                    <div class="off"><span>Get 25% off</span></div>
+                    <div class="img" style="background-image: url(potato.jpg);"></div>
+                    <span class="name">Potato</span>
+                    <select>price <option value="1 kg - Rs 34.00">1 kg - Rs 34.00</option><option value="2kg - Rs 60.00">2kg - Rs 60.00</option></select>
+                    <span class="price">MRP <del>Rs-65.00</del> Rs-49.00</span>
+                    <div class="input"><label>Qty</label><input type="number" value="1"></div>
+                    <button><ion-icon name="cart-outline"></ion-icon>Add</button>
+                </div>
+                <div class="vege3">
+                    <div class="off"><span>Get 25% off</span></div>
+                    <div class="img" style="background-image: url(tomato.jpg);"></div>
+                    <span class="name">Tomato</span>
+                    <select>price <option value="1 kg - Rs 100.00">1 kg - Rs 100.00</option><option value="2kg - Rs 198.00">2kg - Rs 198.00</option></select>
+                    <span class="price">MRP <del>Rs-65.00</del> Rs-49.00</span>
+                    <div class="input"><label>Qty</label><input type="number" value="1"></div>
+                    <button><ion-icon name="cart-outline"></ion-icon>Add</button>
+                </div>
+            </div>
+        </div>
+        <div id="fruits">
+            <h4>Fruits</h4>
+            <div class="fruit-list">
+                <div class="fr1">
+                    <div class="off"><span>Get 25% off</span></div>
+                    <div class="img" style="background-image: url(apple.jpg);"></div>
+                    <span class="name">Apple - Royal Gala Economy</span>
+                    <select>price <option value="4 pcs (Approx.450 g-500 g)">4 pcs (Approx.450 g-500 g)</option><option value="8 pcs (Approx.900 g-500 g)">4 pcs (Approx.450 g-500 g)</option><option value="5kg - Rs 166.00">5kg - Rs 166.00</option></select>
+                    <span class="price">MRP <del>Rs-65.00</del> Rs-49.00</span>
+                    <div class="input"><label>Qty</label><input type="number" value="1"></div>
+                    <button><ion-icon name="cart-outline"></ion-icon>Add</button>
+                </div>
+                <div class="fr2">
+                    <div class="off"><span>Get 25% off</span></div>
+                    <div class="img" style="background-image: url(pomo.jpg);"></div>
+                    <span class="name">Pomegranate</span>
+                    <select>price <option value="4 pcs (Approx.450 g-500 g)">4 pcs (Approx.450 g-500 g)</option><option value="2kg - Rs 60.00">2kg - Rs 60.00</option></select>
+                    <span class="price">MRP <del>Rs-65.00</del> Rs-49.00</span>
+                    <div class="input"><label>Qty</label><input type="number" value="1"></div>
+                    <button><ion-icon name="cart-outline"></ion-icon>Add</button>
+                </div>
+                <div class="fr3">
+                    <div class="off"><span>Get 25% off</span></div>
+                    <div class="img" style="background-image: url(lemon.jpg);"></div>
+                    <span class="name">Lemon(loose)</span>
+                    <select>price <option value="1 kg - Rs 100.00">1 kg - Rs 100.00</option><option value="2kg - Rs 198.00">2kg - Rs 198.00</option></select>
+                    <span class="price">MRP<del>Rs-65.00</del> Rs-49.00</span>
+                    <div class="input"><label>Qty</label><input type="number" value="1"></div>
+                    <button><ion-icon name="cart-outline"></ion-icon>Add</button>
+                </div>
+            </div>
+        </div>
+        <div id="daily-stps">
+            <h4>Your Daily Staples</h4>
+            <div class="ds-list1">
+                <div class="ds1">
+                    <div class="img" style="background-image: url(attaflourimg.jpg);"></div>
+                    <span class="name">Atta & Flour</span>
+                </div>
+                <div class="ds2">
+                    <div class="img" style="background-image: url(dalpulseimg.jpg);"></div>
+                    <span class="name">Dal & Pulses</span>
+                </div>
+                <div class="ds3">
+                    <div class="img" style="background-image: url(saltsugarimg.jpg);"></div>
+                    <span class="name">Salt & Sugar</span>
+                </div>
+            </div>
+            <div class="ds-list2">
+                <div class="ds4">
+                    <div class="img" style="background-image: url(oil&ghee.jpg);"></div>
+                    <span class="name">Oil & Ghee</span>
+                </div>
+                <div class="ds5">
+                    <div class="img" style="background-image: url(dryfruits.jpg);"></div>
+                    <span class="name">Dry Fruits</span>
+                </div>
+                <div class="ds5">
+                    <div class="img" style="background-image: url(rice.jpg);"></div>
+                    <span class="name">Rice & Rice Flour</span>
+                </div>
+            </div>
+        </div>
+        <div id="snack">
+            <h4>Snacks</h4>
+            <div class="sn-list">
+                <div class="sn1">
+                    <div class="img" style="background-image: url(lays.jpg);"></div>
+                    <span class="name">Tea Time Snack <br> UPTO 60% OFF</span>
+                </div>
+                <div class="sn2">
+                    <div class="img" style="background-image: url(corn.jpg);"></div>
+                    <span class="name">Morning Starters <br> UPTO 60% OFF</span>
+                </div>
+                <div class="sn3">
+                    <div class="img" style="background-image: url(ice.jpg);"></div>
+                    <span class="name">Sweet Cravings <br> UPTO 60% OFF</span>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <a href="#">WWW.Easycart321.com</a>
+            <div class="foot-icon">
+                <ion-icon class="icon" name="logo-whatsapp"></ion-icon>
+                <ion-icon class="icon" name="logo-instagram"></ion-icon>
+                <ion-icon class="icon" name="logo-twitter"></ion-icon>
+                <ion-icon class="icon" name="logo-facebook"></ion-icon>
+            </div>
+            <h4>Contact:7824926252</h4>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>                             
