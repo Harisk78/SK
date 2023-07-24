@@ -38,7 +38,7 @@ function reg(){
         return false;
     }
     if(name!=''||name!=null&&email!=''||email!=null&&pass!=''||pass!=null&&cpass!=''||cpass!=null&&age!=''||age!=null&&tel!=''||tel!=null&&pass==cpass){
-        window.location="http://127.0.0.1:5500/login.html";
+        window.location="https://harisk78.github.io/SK/Project/list.html";
     }
 }
 
