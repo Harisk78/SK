@@ -71,7 +71,7 @@ section{
     background-position: center;
     background-size: cover;
     min-height: 100vh;
-    margin-left: 0;
+    margin-left: 200px;
     transition: margin-left 0.2s;
 }
 @media (max-width:769px){
@@ -96,5 +96,8 @@ section{
     .section-slide{
         margin-left:200px;
         transition: 0.2s;
+    }
+    section{
+        margin:0;
     }
 }
