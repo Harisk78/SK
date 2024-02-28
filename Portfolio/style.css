@@ -11,7 +11,7 @@ body{
 .nav{
     height: 100%;
     width:200px;
-    background-color: rgba(255, 255, 255, 0.747);
+    background-color: rgb(155, 155, 155);
     position: fixed;
     transition: all 0.2s;
 }
@@ -32,27 +32,38 @@ body{
     cursor: pointer;
     display: none;
 }
-.nav ul{
-    height:100%;
+.nav .div-list{
     width:100%;
-    text-align: center;
-}
-.nav ul li{
-    padding:10px 0px;
-    border-bottom: 1px solid whitesmoke;
+    text-align: center; 
     cursor: pointer;
+    position: relative;
 }
-.nav ul li a{
-    color: black;
+.nav .div-list .icon{
+    position: absolute;
+    right:20px;
+}
+.nav .div-list a:hover{
+    color:white;
+    padding-left: 10px;
     transition: padding-left 0.2s;
-}
-.nav ul li:hover{
     background-color: rgb(14, 14, 34);
 }
-.nav ul li:hover a{
-    color: white;
-    padding-left:10px;
-    transition: padding-left 0.2s;
+.nav .div-list a{
+    color: black;
+    display: block;
+    padding:15px 0px;
+    border-bottom: 1px solid whitesmoke;
+}
+.nav .div-list .skills-nav-child{
+    background-color: rgba(255, 255, 255, 0.466);
+    display: none;
+}
+.nav .div-list .skills-nav-child a{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.dropdownshow{
+   display: block;
+    transition: all 0.2s;
 }
 .menu{
     color: white;

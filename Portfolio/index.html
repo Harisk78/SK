@@ -13,13 +13,15 @@
     <div class="nav" id="nav">
         <ion-icon name="close-outline" class="close" id="close"></ion-icon>
         <header>Menu</header>
-        <ul>
-            <li><a href="#">Home &#11163;</a></li>
-            <li class="home-nav-child"><a href="#">Home child 1</a></li>
-            <li class="home-nav-child"><a href="#">Home child 2</a></li>
-            <li><a href="#">Bio</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div id="home-list" class="div-list"><a href="#">Home <ion-icon class="icon" name="chevron-forward-outline"></ion-icon></a></div>
+        <div id="Bio-list" class="div-list"><a href="#">Bio</a></div>
+        <div  class="div-list"><a href="#" id="Skills-list">Skills <ion-icon class="icon" name="chevron-forward-outline"></ion-icon></a>
+            <div class="skills-nav-child" id="skills-nav-child">
+                <a href="#">c</a>
+                <a href="#">WEb</a>
+            </div>
+        </div>
+        <div id="Contact-list" class="div-list"><a href="#">Contact Me</a></div>
     </div>
     <section id="sec">
        
