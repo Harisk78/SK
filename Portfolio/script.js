@@ -16,6 +16,10 @@ close.addEventListener("click",()=>{
     sec.classList.remove('section-slide');
 });
 Skills_list.addEventListener("click",()=>{
-    skills_nav_child.classList.toggle('dropdownshow');
-    console.log(skills_nav_child);
-})
+    if(skills_nav_child.className == "skills-nav-child"){
+        skills_nav_child.className = "dropdownshow";
+    }
+    else{
+        skills_nav_child.className = "skills-nav-child";
+    }
+});
