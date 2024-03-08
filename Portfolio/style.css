@@ -92,6 +92,34 @@ section{
 section .d1{
     min-height: 100vh;
 }
+#home-content{
+    height: 100vh;
+    color: black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    background-color: rgb(91, 78, 141);
+}
+#home-content .text{
+    width:50%;
+}
+#home-content .text p{
+    line-height: 30px;
+}
+#home-content .image{
+    width:50%;
+}
+#home-content .image img{
+    float: right;
+    height:300px;
+    width: 80%;
+    background-color: red;
+}
+#bio-content{
+    height: 100vh;
+    background-color: rgb(31, 26, 51);
+}
 @media (max-width:769px){
     .nav{
         transform: translateX(-100%);
