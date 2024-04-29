@@ -15,7 +15,7 @@ function log(){
         alert("Wrong password");
     }
     else if((pass!=''||pass!=null)&&(pass==ps)&&(name!=''||name!=null)){
-        window.location.assign("http://127.0.0.1:5500/list.html");
+        window.location.assign("https://harisk78.github.io/SK/Project/list.html");
     }
 }
 
