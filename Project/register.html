@@ -21,18 +21,18 @@
             </ul>
         </div>
         <img src="register.jpg" alt="bg" class="regimg" height="100%" width="100%">
-        <div class="reg">
+        <form class="reg" method="post">
             <h1 id="wel">Welcome...</h1>
-            <input id="uname" type="text" placeholder="Username" required>
-            <input id="uemail" type="email" placeholder="Email" required>
-            <input id="upass" type="password" placeholder="Password" required>
-            <input id="cmpass" type="password" placeholder="comfirm password">
-            <input id="age" type="number" placeholder="Age">
-            <input id="tel" type="tel" placeholder="MOB Num">
+            <input name="uname" id="uname" type="text" placeholder="Username" required>
+            <input name="uemail" id="uemail" type="email" placeholder="Email" required>
+            <input name="upass" id="upass" type="password" placeholder="Password" required>
+            <input name="cmpass" id="cmpass" type="password" placeholder="comfirm password">
+            <input name="age" id="age" type="number" placeholder="Age">
+            <input name="tel" id="tel" type="tel" placeholder="MOB Num">
             <button onclick="reg()">Register</button>
             <a class="register" href="login.html">Already a user..!</a>
             <!-- <a class="home" href="index.html">Home</a> -->
-        </div>
+        </form>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="script.js"></script>
