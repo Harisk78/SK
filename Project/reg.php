@@ -1,18 +1,9 @@
 <?php
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    uname VARCHAR(50),
-    uemail VARCHAR(100),
-    upass VARCHAR(255),
-    cmpass VARCHAR(255),
-    age INT,
-    tell VARCHAR(15)
-);
 // Database connection variables
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "your_database_name";
+$dbname = "hari_sk";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -37,6 +28,8 @@ $stmt->bind_param("ssssds", $uname, $uemail, $upass, $cmpass, $age, $tell);
 // Execute the statement
 if ($stmt->execute()) {
     echo "New record created successfully";
+    header("Location:/Project/list.html");
+    exit();
 } else {
     echo "Error: " . $stmt->error;
 }
