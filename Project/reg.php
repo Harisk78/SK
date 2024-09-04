@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "hari_sk";
+$dbname = "sk";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -28,8 +28,8 @@ $stmt->bind_param("ssssds", $uname, $uemail, $upass, $cmpass, $age, $tell);
 // Execute the statement
 if ($stmt->execute()) {
     echo "New record created successfully";
-    header("Location:/Project/list.html");
-    exit();
+    header("Location: /sk-main/Project/list.html");
+    exit(); // Exit the script after redirect
 } else {
     echo "Error: " . $stmt->error;
 }
