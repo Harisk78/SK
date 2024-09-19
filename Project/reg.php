@@ -28,7 +28,7 @@ $stmt->bind_param("ssssds", $uname, $uemail, $upass, $cmpass, $age, $tell);
 // Execute the statement
 if ($stmt->execute()) {
     echo "New record created successfully";
-    header("Location: /sk-main/Project/list.html");
+    header("Location:https://harisk78.github.io/SK/Project/list.html");
     exit(); // Exit the script after redirect
 } else {
     echo "Error: " . $stmt->error;
